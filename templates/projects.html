@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="css/style.css" type='text/css'>
+
+<section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card" style="background-image: url('{% static "images/pothole.jpg" %}');">
+            <div class="overlay">
+                <h3>Pothole Detection System</h3>
+                <p>YOLO-based model with 86% accuracy for road safety analysis.</p>
+                {% comment %} <video id="myVideo" width="400" controls style="display:none;">
+                    <source src="{% static 'videos/Pothole_Detection_1.mp4' %}" type="video/mp4">
+                </video>
+                <a href="#" onclick="playVideo()">Watch Video</a> {% endcomment %}
+                <a href="{% static 'videos/Pothole_Detection_1.mp4' %}" target="_blank" style="color: white; background: #313233; padding: 8px 15px; border-radius: 5px; text-decoration: none;" class='border : 1px solid'>
+                    Watch Video
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('{% static "images/movie.jpg" %}');">
+            <div class="overlay">
+                <h3>Movie Recommendation System</h3>
+                <p>ML-based system to suggest movies based on user preferences.</p>
+                <a href="{% static 'videos/movie_recommendation.mp4' %}" target="_blank" style="color: white; background: #313233; padding: 8px 15px; border-radius: 5px; text-decoration: none;" class='border : 1px solid'>
+                    Watch Video
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('{% static "images/food.jpg" %}');">
+            <div class="overlay">
+                <h3>RestoCafe</h3>
+                <p>Interactive food ordering web application.</p>
+                <a href="{% static 'videos/RestoCafe.mp4' %}" target="_blank" style="color: white; background: #313233; padding: 8px 15px; border-radius: 5px; text-decoration: none;" class='border : 1px solid'>
+                    Watch Video
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('{% static "images/job.jpg" %}');">
+            <div class="overlay">
+                <h3>Placement Portal With Job Recommendation System</h3>
+                <p>Recommends jobs based on skills and interests.</p>
+                <a href="{% static 'documents/Job_recommendation.pdf' %}" target="_blank" style="color: white; background: #313233; padding: 8px 15px; border-radius: 5px; text-decoration: none;" class='border : 1px solid'>
+                    Watch Document
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('{% static "images/atm.jpg" %}');">
+            <div class="overlay">
+                <h3>ATM Security System</h3>
+                <p>Enhanced ATM safety with authentication system.</p>
+                <a href="{% static 'documents/ATM SECURITY.pdf' %}" target="_blank" style="color: white; background: #313233; padding: 8px 15px; border-radius: 5px; text-decoration: none;" class='border : 1px solid'>
+                    Watch Document
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</section>
+
+{% endblock content %}

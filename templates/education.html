@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="css/style.css" type='text/css'>
+
+<section id="journey">
+        <h2 class="text-center">My Journey</h2>
+        <br>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Python Developer Intern</h3>
+                <p>A&A Infotech Solution</p>
+                <span>Aug 2025 - Mar 2026</span>
+                <p>
+                    Specialized in web scraping and automation using Selenium. 
+                    Built scripts to extract data from websites, process CSV/PDF files, 
+                    and automate form submissions, improving efficiency and reducing manual work.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Python Data Science & AI/ML Intern</h3>
+                <p>Luminar Technolab</p>
+                <span>Jul 2024 - Feb 2025</span>
+                <p>
+                    Developed AI/ML projects and performed data analysis using Pandas and NumPy. 
+                    Cleaned and processed datasets, and built data-driven solutions for real-world problems.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Master of Computer Applications (MCA)</h3>
+                <p>Bangalore North University</p>
+                <span>2022 - 2024</span>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>Calicut University</p>
+                <span>2019 - 2022</span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="text-xl-center">
+        <button onclick="window.location.href='{% url 'certificate' %}'" class="text-center">Certificates</button>
+    </div>
+
+</section>
+
+{% endblock content %}

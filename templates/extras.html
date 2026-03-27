@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<section id="beyond">
+    <h2 class="title">Beyond Coding</h2>
+
+    <div class="beyond-container">
+        <div class="card">
+        {% comment %} <a href="{% url "travel" %}"> {% endcomment %}
+            <div class="icon">🌍</div>
+            <h3>Travel</h3>
+            <p>Love exploring new places and cultures.</p>
+        {% comment %} </a> {% endcomment %}
+        </div>
+
+        <div class="card">
+            <div class="icon">🎮</div>
+            <h3>Gaming</h3>
+            <p>Passionate about story-based and competitive games.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💪</div>
+            <h3>Fitness</h3>
+            <p>Focused on consistency and self-discipline.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎧</div>
+            <h3>Music</h3>
+            <p>Enjoy music for relaxation and focus.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎬</div>
+            <h3>Editing</h3>
+            <p>Passionate about creating and enhancing visual content.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚗</div>
+            <h3>Driving</h3>
+            <p>Enjoy long drives and exploring new routes.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✍️</div>
+            <h3>Writing</h3>
+            <p>Love expressing ideas and thoughts through writing.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐾</div>
+            <h3>Pets</h3>
+            <p>Animal lover who enjoys spending time with pets.</p>
+        </div>
+
+    </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <form method="POST" class="contact-form" onsubmit="showPopup()">
+            {% csrf_token %}
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Phone Number">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h4>Whether you have a question or opportunity, feel free to reach out</h4>
+
+            <p>Email:</p>
+            <a href="mailto:aakashv3434@gmail.com" style="color: white; background: #313233; padding: 8px 15px; border-radius: 5px; text-decoration: none;" class='border : 1px solid'>Email</a>
+            <br><br>
+            <p>LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/aakash-v-devan-5a93972a4/" target="_blank" style="color: white; background: #313233; padding: 8px 15px; border-radius: 5px; text-decoration: none;" class='border : 1px solid'>
+                LinkedIn
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Success Popup -->
+<div id="popup" class="popup">
+    <p>✅ Message Sent Successfully!</p>
+</div>
+
+{% endblock content %}

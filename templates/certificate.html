@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% load static %}
+
+<section id="travel">
+    <h2 class="title">Certificates</h2>
+
+    <div class="gallery">
+        <div>
+            <h4 class='certificate-heading'>BCA</h4>
+            <img src="{% static 'images/bca.jpeg' %}">
+        </div>
+        <div>
+            <h4 class='certificate-heading'>MCA</h4>
+            <img src="{% static 'images/mca.jpg' %}">
+        </div>
+        <div>
+            <h4 class='certificate-heading1'>Data Science Internship Certificate</h4>
+            <img src="{% static 'images/luminar1.jpeg' %}" onclick="zoom">
+        </div>
+        <div>
+            <h4 class='certificate-heading'>NACTET Certificate</h4>
+            <img src="{% static 'images/luminar2.jpeg' %}">
+
+        </div>     
+        <div>
+            <h4 class='certificate-heading1'>Python Development Internship Certificate</h4>
+            <img src="{% static 'images/AA.jpeg' %}">
+        </div>
+
+
+    </div>
+</section>
+
+{% endblock content %}
